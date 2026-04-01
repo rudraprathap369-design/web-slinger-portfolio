@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SpiderCursor = () => {
   const [enabled, setEnabled] = useState(false);
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
   const [trail, setTrail] = useState({ x: 0, y: 0 });
+  const mouseRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const finePointer = window.matchMedia("(pointer: fine)").matches;
@@ -13,13 +14,18 @@ const SpiderCursor = () => {
 
     document.body.style.cursor = "none";
 
-    const handleMove = (event: MouseEvent) => setMouse({ x: event.clientX, y: event.clientY });
+    const handleMove = (event: MouseEvent) => {
+      const next = { x: event.clientX, y: event.clientY };
+      mouseRef.current = next;
+      setMouse(next);
+    };
+
     let frame = 0;
 
     const animate = () => {
       setTrail((prev) => ({
-        x: prev.x + (mouse.x - prev.x) * 0.18,
-        y: prev.y + (mouse.y - prev.y) * 0.18,
+        x: prev.x + (mouseRef.current.x - prev.x) * 0.18,
+        y: prev.y + (mouseRef.current.y - prev.y) * 0.18,
       }));
       frame = window.requestAnimationFrame(animate);
     };
@@ -32,7 +38,7 @@ const SpiderCursor = () => {
       window.removeEventListener("mousemove", handleMove);
       window.cancelAnimationFrame(frame);
     };
-  }, [mouse.x, mouse.y]);
+  }, []);
 
   if (!enabled) return null;
 

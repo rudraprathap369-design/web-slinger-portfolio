@@ -108,7 +108,7 @@ const Index = () => {
 
     const subject = encodeURIComponent(`Portfolio enquiry for Panjam Rudra Prathap`);
     const body = encodeURIComponent(
-      `Hi Rudra,%0D%0A%0D%0AI'm reaching out regarding an opportunity.%0D%0A%0D%0AName: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0A${formData.message}`,
+      `Hi Rudra,\n\nI'm reaching out regarding an opportunity.\n\nName: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`,
     );
 
     toast.success("Web shot sent — opening your mail client.");
