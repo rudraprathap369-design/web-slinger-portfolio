@@ -4,7 +4,6 @@ import {
   Award,
   BadgeCheck,
   Briefcase,
-  Bug,
   Code2,
   Database,
   ExternalLink,
@@ -17,6 +16,7 @@ import {
   Send,
   ShieldCheck,
   Sparkles,
+  Zap,
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -26,11 +26,11 @@ import SpiderCursor from "@/components/portfolio/SpiderCursor";
 import SpiderLoader from "@/components/portfolio/SpiderLoader";
 
 const navItems = [
-  { label: "Origin", href: "#about" },
-  { label: "Superpowers", href: "#skills" },
-  { label: "Journey", href: "#experience" },
-  { label: "Mission", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Asgard", href: "#about" },
+  { label: "Thunder", href: "#skills" },
+  { label: "Saga", href: "#experience" },
+  { label: "Forge", href: "#projects" },
+  { label: "Summon", href: "#contact" },
 ];
 
 const highlights = [
@@ -111,7 +111,7 @@ const Index = () => {
       `Hi Rudra,\n\nI'm reaching out regarding an opportunity.\n\nName: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`,
     );
 
-    toast.success("Web shot sent — opening your mail client.");
+    toast.success("Lightning dispatched — opening your mail client.");
     window.location.href = `mailto:rudraprathap369@gmail.com?subject=${subject}&body=${body}`;
   };
 
@@ -137,7 +137,7 @@ const Index = () => {
             ))}
           </nav>
           <Button asChild variant="signal" size="sm">
-            <a href="#contact">Hire the Hero</a>
+            <a href="#contact">Summon Talent</a>
           </Button>
         </div>
       </header>
@@ -146,16 +146,16 @@ const Index = () => {
         <section className="container grid min-h-[calc(100vh-5rem)] items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
           <div className="space-y-8 animate-web-swing">
             <span className="eyebrow-label">
-              <Bug className="h-4 w-4 text-primary" /> Friendly Neighborhood Developer
+              <Zap className="h-4 w-4 text-primary" /> Thunder-Forged Developer
             </span>
 
             <div className="space-y-5">
               <p className="text-lg font-semibold uppercase tracking-[0.32em] text-primary">Panjam Rudra Prathap</p>
               <h1 className="headline-display text-5xl leading-[0.92] sm:text-6xl lg:text-8xl">
-                Spider-sense for systems, networks, and polished web experiences.
+                Bringing Thor-grade force to systems, networks, and polished web experiences.
               </h1>
               <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
-                Computer Science Engineer crafting resilient web interfaces, reliable network setups, and database-driven solutions — with great responsibility and recruiter-ready clarity.
+                Computer Science Engineer crafting resilient interfaces, dependable network setups, and database-driven solutions with calm execution, resilience, and recruiter-ready clarity.
               </p>
             </div>
 
@@ -188,10 +188,11 @@ const Index = () => {
                 <div className="flex items-start justify-between gap-6">
                   <div>
                     <p className="text-sm font-semibold uppercase tracking-[0.28em] text-muted-foreground">Marvel-inspired portfolio</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-muted-foreground">MCU Thor-inspired portfolio</p>
                     <p className="headline-display mt-3 text-4xl sm:text-5xl">Rudra //</p>
                   </div>
                   <div className="animate-spider-sense rounded-full border border-primary/60 bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.22em] text-primary">
-                    Available
+                    Open to roles
                   </div>
                 </div>
 
@@ -200,15 +201,15 @@ const Index = () => {
                     <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Hero brief</p>
                     <p className="mt-3 text-2xl font-bold text-foreground">Java • SQL • Networking • Responsive Design</p>
                     <p className="mt-3 text-base text-muted-foreground">
-                      "With great code comes great responsibility." I turn structured thinking into fast, dependable solutions.
+                      "Built to weather pressure and ship with precision." I turn structured thinking into stable, high-impact solutions.
                     </p>
                   </div>
                   <div className="rounded-xl border border-border/70 bg-background/70 p-6 backdrop-blur-md">
                     <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Current focus</p>
                     <ul className="mt-3 space-y-3 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> Web development</li>
-                      <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> Network analysis</li>
-                      <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> System reliability</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> Frontend engineering</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> Network operations</li>
+                      <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> Database clarity</li>
                     </ul>
                   </div>
                 </div>
@@ -233,16 +234,16 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Origin Story"
-              title="From curious engineer to dependable tech problem-solver"
-              kicker="A professional, comic-panel style snapshot of how Rudra blends software, systems, and support."
+              eyebrow="Asgardian Origin"
+              title="Forged through discipline, curiosity, and dependable execution"
+              kicker="A recruiter-friendly origin arc showing how Rudra blends software, systems, and technical support with composure under pressure."
             />
 
             <div className="grid gap-5 lg:grid-cols-3">
               {[
-                "Started with a strong base in computer engineering, building discipline in hardware, software, and problem solving.",
-                "Expanded into networking through hands-on simulations, traffic analysis, and secure infrastructure fundamentals.",
-                "Now focused on turning technical skills into clean, usable digital products that teams and recruiters trust.",
+                "Started with a strong base in computer engineering, building discipline across hardware, software, and structured problem solving.",
+                "Expanded into networking through hands-on simulations, packet analysis, and secure infrastructure fundamentals.",
+                "Now focused on delivering polished digital products and reliable technical support with a Thor-like steady hand under pressure.",
               ].map((copy, index) => (
                 <article key={index} className="group rounded-xl border border-border/70 bg-background/65 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-glow">
                   <p className="text-sm uppercase tracking-[0.24em] text-primary">Panel 0{index + 1}</p>
@@ -257,9 +258,9 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Superpowers"
-              title="Technical strengths mapped like a hero loadout"
-              kicker="Each capability reflects practical experience, from routing packets to building responsive interfaces."
+              eyebrow="Stormforged Skills"
+              title="Technical strengths charged like an MCU Thor loadout"
+              kicker="Each capability reflects practical field experience, from routing packets to building responsive interfaces."
             />
 
             <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-4">
@@ -293,9 +294,9 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Hero Journey"
-              title="Hands-on experience earned in the field"
-              kicker="A timeline focused on real responsibility, troubleshooting, and technical dependability."
+              eyebrow="Hero Saga"
+              title="Hands-on experience forged in real technical environments"
+              kicker="A timeline centered on responsibility, troubleshooting, and dependable execution when systems matter."
             />
 
             <div className="relative space-y-6 before:absolute before:left-[1.15rem] before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-border/70 sm:before:left-1/2 sm:before:-translate-x-1/2">
@@ -335,9 +336,9 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Mission"
+              eyebrow="Forge Mission"
               title="Inventory Management System"
-              kicker="A web-based project focused on asset visibility, responsiveness, and actionable reporting."
+              kicker="A web-based build focused on asset visibility, responsive usability, and actionable reporting."
             />
 
             <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
@@ -386,12 +387,12 @@ const Index = () => {
 
               <aside className="space-y-6">
                 <div className="section-shell p-6">
-                  <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Project alerts</p>
+                  <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Mission signals</p>
                   <div className="mt-4 space-y-4">
                     {[
-                      "UI adapts across breakpoints for recruiter-friendly demos.",
-                      "Asset data is organized for clarity and speed.",
-                      "Alerts improve response time for stock issues.",
+                        "UI adapts cleanly across breakpoints for recruiter-friendly demos.",
+                        "Asset data stays organized for speed, clarity, and reporting.",
+                        "Alert workflows improve response time when stock issues appear.",
                     ].map((item) => (
                       <div key={item} className="animate-spider-sense rounded-xl border border-primary/40 bg-primary/10 p-4 text-sm text-foreground">
                         {item}
@@ -420,9 +421,9 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Training Arc"
-              title="Academic progression with strong consistency"
-              kicker="A disciplined path through school, diploma, and engineering — building a broad technical base."
+              eyebrow="Training Grounds"
+              title="Academic progression built on consistency and grit"
+              kicker="A disciplined path through school, diploma, and engineering that established a broad technical foundation."
             />
 
             <div className="grid gap-5 md:grid-cols-3">
@@ -442,9 +443,9 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Call Spider-Man"
+              eyebrow="Summon the Thunder"
               title="Let’s connect for internships, collaborations, or recruiter conversations"
-              kicker="Send a quick message and launch a direct mail draft with the web-shooter button below."
+              kicker="Send a quick message and launch a direct mail draft with the lightning call button below."
             />
 
             <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
@@ -511,7 +512,7 @@ const Index = () => {
                 <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-sm text-muted-foreground">Fast response, clear communication, and recruiter-friendly follow-up.</p>
                   <Button variant="hero" size="xl" type="submit">
-                    Fire Web Shot <Send className="h-4 w-4" />
+                    Launch Lightning Note <Send className="h-4 w-4" />
                   </Button>
                 </div>
               </form>
@@ -521,7 +522,7 @@ const Index = () => {
       </main>
 
       <footer className="container relative z-10 pb-8 text-center text-sm text-muted-foreground">
-        Built for Panjam Rudra Prathap — recruiter-ready, responsive, and powered by precision.
+        Built for Panjam Rudra Prathap — recruiter-ready, responsive, and forged with precision.
       </footer>
     </div>
   );

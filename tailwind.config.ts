@@ -69,8 +69,8 @@ export default {
         xl: "calc(var(--radius) + 0.5rem)",
       },
       fontFamily: {
-        display: ["Bangers", "cursive"],
-        body: ["Rajdhani", "sans-serif"],
+        display: ["Cinzel", "serif"],
+        body: ["Exo 2", "sans-serif"],
       },
       backgroundImage: {
         "hero-radial": "var(--gradient-hero)",
@@ -95,21 +95,22 @@ export default {
           },
         },
         "web-swing": {
-          "0%": { opacity: "0", transform: "translate3d(-18px, -36px, 0) rotate(-7deg)" },
-          "60%": { opacity: "1", transform: "translate3d(10px, 8px, 0) rotate(4deg)" },
+          "0%": { opacity: "0", transform: "translate3d(-22px, -48px, 0) rotate(-9deg) scale(0.96)" },
+          "60%": { opacity: "1", transform: "translate3d(12px, 10px, 0) rotate(4deg) scale(1.02)" },
           "100%": { opacity: "1", transform: "translate3d(0, 0, 0) rotate(0deg)" },
         },
         "spider-sense": {
-          "0%, 100%": { boxShadow: "0 0 0 0 hsl(var(--glow) / 0.12)" },
-          "50%": { boxShadow: "0 0 0 14px hsl(var(--glow) / 0)" },
+          "0%, 100%": { boxShadow: "0 0 0 0 hsl(var(--glow) / 0.18), 0 0 0 1px hsl(var(--primary) / 0.18)" },
+          "50%": { boxShadow: "0 0 0 16px hsl(var(--glow) / 0), 0 0 24px hsl(var(--glow) / 0.26)" },
         },
         float: {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
         },
         crawl: {
-          "0%": { transform: "translateX(-160px)" },
-          "100%": { transform: "translateX(160px)" },
+          "0%": { transform: "translate(-50%, -50%) rotate(-10deg)" },
+          "50%": { transform: "translate(-50%, -58%) rotate(4deg)" },
+          "100%": { transform: "translate(-50%, -50%) rotate(-10deg)" },
         },
         shimmer: {
           "0%": { backgroundPosition: "0% 50%" },
@@ -126,9 +127,9 @@ export default {
         shimmer: "shimmer 2.5s linear infinite",
       },
       boxShadow: {
-        panel: "0 20px 60px -28px hsl(var(--hero) / 0.82)",
-        glow: "0 0 0 1px hsl(var(--border)), 0 0 28px hsl(var(--glow) / 0.32)",
-        hero: "0 30px 80px -30px hsl(var(--primary) / 0.5)",
+        panel: "0 22px 64px -30px hsl(var(--hero) / 0.9)",
+        glow: "0 0 0 1px hsl(var(--border)), 0 0 28px hsl(var(--glow) / 0.3)",
+        hero: "0 32px 82px -30px hsl(var(--primary) / 0.38)",
       },
     },
   },
