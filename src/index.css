@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Titillium+Web:wght@400;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,53 +10,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 219 40% 10%;
-    --foreground: 210 33% 98%;
+    --background: 132 22% 6%;
+    --foreground: 120 33% 96%;
 
-    --surface: 220 34% 14%;
-    --panel: 219 30% 17%;
-    --glow: 1 88% 58%;
-    --hero: 217 66% 22%;
+    --surface: 135 19% 10%;
+    --panel: 134 24% 14%;
+    --glow: 124 100% 52%;
+    --hero: 135 71% 16%;
 
-    --card: 220 33% 12%;
-    --card-foreground: 210 33% 98%;
+    --card: 134 22% 9%;
+    --card-foreground: 120 33% 96%;
 
-    --popover: 220 33% 12%;
-    --popover-foreground: 210 33% 98%;
+    --popover: 134 22% 9%;
+    --popover-foreground: 120 33% 96%;
 
-    --primary: 1 88% 58%;
-    --primary-foreground: 210 33% 98%;
+    --primary: 124 100% 52%;
+    --primary-foreground: 132 22% 6%;
 
-    --secondary: 217 73% 32%;
-    --secondary-foreground: 210 33% 98%;
+    --secondary: 135 63% 24%;
+    --secondary-foreground: 120 33% 96%;
 
-    --muted: 218 19% 22%;
-    --muted-foreground: 213 16% 78%;
+    --muted: 131 13% 18%;
+    --muted-foreground: 118 11% 74%;
 
-    --accent: 0 0% 99%;
-    --accent-foreground: 219 40% 10%;
+    --accent: 184 100% 73%;
+    --accent-foreground: 132 22% 6%;
 
     --destructive: 0 78% 58%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 26% 28%;
-    --input: 218 23% 20%;
-    --ring: 1 88% 58%;
+    --border: 131 21% 24%;
+    --input: 132 16% 18%;
+    --ring: 124 100% 52%;
 
     --radius: 1rem;
 
-    --gradient-hero: radial-gradient(circle at 18% 14%, hsl(var(--glow) / 0.18), transparent 24%), radial-gradient(circle at 82% 18%, hsl(var(--accent) / 0.12), transparent 22%), linear-gradient(145deg, hsl(var(--secondary) / 0.96), hsl(var(--background)) 56%, hsl(var(--hero)));
+    --gradient-hero: radial-gradient(circle at 20% 14%, hsl(var(--glow) / 0.24), transparent 24%), radial-gradient(circle at 82% 18%, hsl(var(--accent) / 0.12), transparent 20%), linear-gradient(145deg, hsl(var(--secondary) / 0.96), hsl(var(--background)) 56%, hsl(var(--hero)));
     --gradient-panel: linear-gradient(145deg, hsl(var(--card) / 0.98), hsl(var(--panel) / 0.92));
-    --pattern-web: radial-gradient(circle at center, hsl(var(--accent) / 0.14) 1px, transparent 1.5px), linear-gradient(90deg, transparent 0 46%, hsl(var(--glow) / 0.08) 50%, transparent 54%), linear-gradient(0deg, transparent 0 46%, hsl(var(--accent) / 0.06) 50%, transparent 54%);
+    --pattern-web: radial-gradient(circle at center, hsl(var(--accent) / 0.16) 1px, transparent 1.5px), linear-gradient(90deg, transparent 0 46%, hsl(var(--glow) / 0.08) 50%, transparent 54%), linear-gradient(0deg, transparent 0 46%, hsl(var(--accent) / 0.06) 50%, transparent 54%);
 
-    --sidebar-background: 220 33% 12%;
-    --sidebar-foreground: 210 33% 98%;
-    --sidebar-primary: 1 88% 58%;
-    --sidebar-primary-foreground: 210 33% 98%;
-    --sidebar-accent: 219 30% 17%;
-    --sidebar-accent-foreground: 210 33% 98%;
-    --sidebar-border: 217 26% 28%;
-    --sidebar-ring: 1 88% 58%;
+    --sidebar-background: 134 22% 9%;
+    --sidebar-foreground: 120 33% 96%;
+    --sidebar-primary: 124 100% 52%;
+    --sidebar-primary-foreground: 132 22% 6%;
+    --sidebar-accent: 134 24% 14%;
+    --sidebar-accent-foreground: 120 33% 96%;
+    --sidebar-border: 131 21% 24%;
+    --sidebar-ring: 124 100% 52%;
   }
 }
 
@@ -71,7 +71,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-body;
-    background-image: radial-gradient(circle at top, hsl(var(--glow) / 0.1), transparent 24%), radial-gradient(circle at 76% 14%, hsl(var(--accent) / 0.08), transparent 18%), linear-gradient(180deg, hsl(var(--background)), hsl(var(--hero)) 46%, hsl(var(--background)) 100%);
+    background-image: radial-gradient(circle at top, hsl(var(--glow) / 0.14), transparent 24%), radial-gradient(circle at 76% 14%, hsl(var(--accent) / 0.1), transparent 18%), linear-gradient(180deg, hsl(var(--background)), hsl(var(--hero)) 46%, hsl(var(--background)) 100%);
     min-height: 100vh;
   }
 
@@ -99,6 +99,24 @@ All colors MUST be HSL.
   .web-grid {
     background-image: var(--pattern-web);
     background-size: 26px 26px, 180px 180px, 180px 180px;
+  }
+
+  .omnitrix-ring {
+    @apply relative overflow-hidden rounded-full border border-primary/50 bg-panel/80 shadow-glow;
+  }
+
+  .omnitrix-ring::before {
+    content: "";
+    @apply absolute inset-3 rounded-full border border-accent/40;
+  }
+
+  .omnitrix-ring::after {
+    content: "";
+    @apply absolute inset-[26%] rounded-full border border-primary/60 bg-background/90;
+  }
+
+  .alien-blob {
+    @apply animate-morph rounded-[28%_72%_57%_43%/41%_40%_60%_59%] border border-primary/30 bg-primary/10 blur-3xl;
   }
 
   .headline-display {
