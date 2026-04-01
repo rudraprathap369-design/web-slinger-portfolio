@@ -111,7 +111,7 @@ const Index = () => {
       `Hi Rudra,\n\nI'm reaching out regarding an opportunity.\n\nName: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`,
     );
 
-    toast.success("Shield signal sent — opening your mail client.");
+    toast.success("Omnitrix signal sent — opening your mail client.");
     window.location.href = `mailto:rudraprathap369@gmail.com?subject=${subject}&body=${body}`;
   };
 
@@ -137,7 +137,7 @@ const Index = () => {
             ))}
           </nav>
           <Button asChild variant="signal" size="sm">
-            <a href="#contact">Recruit Rudra</a>
+            <a href="#contact">Activate Contact</a>
           </Button>
         </div>
       </header>
@@ -146,16 +146,16 @@ const Index = () => {
         <section className="container grid min-h-[calc(100vh-5rem)] items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
           <div className="space-y-8 animate-web-swing">
             <span className="eyebrow-label">
-              <Zap className="h-4 w-4 text-primary" /> Captain America Developer
+              <Zap className="h-4 w-4 text-primary" /> Ben 10 Omniverse Developer
             </span>
 
             <div className="space-y-5">
               <p className="text-lg font-semibold uppercase tracking-[0.32em] text-primary">Panjam Rudra Prathap</p>
               <h1 className="headline-display text-5xl leading-[0.92] sm:text-6xl lg:text-8xl">
-                Courageous systems, resilient networks, and polished web experiences.
+                Omnitrix-powered systems, adaptive networks, and polished web experiences.
               </h1>
               <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
-                Computer Science Engineer crafting reliable interfaces, dependable network setups, and database-driven solutions with leadership, clarity, and recruiter-ready polish.
+                Computer Science Engineer crafting reliable interfaces, adaptive network setups, and database-driven solutions with bold sci-fi energy and recruiter-ready polish.
               </p>
             </div>
 
@@ -188,7 +188,7 @@ const Index = () => {
                 <div className="flex items-start justify-between gap-6">
                   <div>
                     <p className="text-sm font-semibold uppercase tracking-[0.28em] text-muted-foreground">Marvel-inspired portfolio</p>
-                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Captain America edition</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Ben 10 Omniverse edition</p>
                     <p className="headline-display mt-3 text-4xl sm:text-5xl">Rudra //</p>
                   </div>
                   <div className="animate-spider-sense rounded-full border border-primary/60 bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.22em] text-primary">
@@ -201,7 +201,7 @@ const Index = () => {
                     <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Hero brief</p>
                     <p className="mt-3 text-2xl font-bold text-foreground">Java • SQL • Networking • Responsive Design</p>
                     <p className="mt-3 text-base text-muted-foreground">
-                      "Built with discipline, focus, and responsibility." I turn structured thinking into clear, dependable solutions.
+                      "Always ready to transform ideas into action." I turn structured thinking into clear, fast, and dependable solutions.
                     </p>
                   </div>
                   <div className="rounded-xl border border-border/70 bg-background/70 p-6 backdrop-blur-md">
@@ -234,16 +234,16 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Hero Origin"
-              title="Built through discipline, curiosity, and steady execution"
-              kicker="A recruiter-friendly origin arc showing how Rudra blends software, systems, and technical support with confidence and responsibility."
+              eyebrow="Omniverse Origin"
+              title="Built through discipline, curiosity, and adaptive execution"
+              kicker="A recruiter-friendly origin arc showing how Rudra blends software, systems, and technical support with confidence, flexibility, and sharp problem solving."
             />
 
             <div className="grid gap-5 lg:grid-cols-3">
               {[
                 "Started with a strong base in computer engineering, building discipline across hardware, software, and structured problem solving.",
                 "Expanded into networking through hands-on simulations, packet analysis, and secure infrastructure fundamentals.",
-                "Now focused on delivering polished digital products and reliable technical support with a Captain America-style balance of confidence, precision, and professionalism.",
+                "Now focused on delivering polished digital products and reliable technical support with a Ben 10-style readiness to adapt, solve, and level up fast.",
               ].map((copy, index) => (
                 <article key={index} className="group rounded-xl border border-border/70 bg-background/65 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-glow">
                   <p className="text-sm uppercase tracking-[0.24em] text-primary">Panel 0{index + 1}</p>
@@ -258,8 +258,8 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Hero Powers"
-              title="Technical strengths mapped with Captain America precision"
+              eyebrow="Alien Powers"
+              title="Technical strengths mapped like Omnitrix transformations"
               kicker="Each capability reflects practical field experience, from routing packets to building responsive interfaces."
             />
 
@@ -295,7 +295,7 @@ const Index = () => {
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
               eyebrow="Hero Journey"
-              title="Hands-on experience earned in real technical environments"
+              title="Hands-on experience earned across evolving technical environments"
               kicker="A timeline centered on responsibility, troubleshooting, and dependable execution when systems matter."
             />
 
@@ -336,7 +336,7 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Mission Brief"
+              eyebrow="Mission Mode"
               title="Inventory Management System"
               kicker="A web-based build focused on asset visibility, responsive usability, and actionable reporting."
             />
@@ -387,7 +387,7 @@ const Index = () => {
 
               <aside className="space-y-6">
                 <div className="section-shell p-6">
-                  <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Shield alerts</p>
+                  <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Omnitrix alerts</p>
                   <div className="mt-4 space-y-4">
                     {[
                         "UI adapts cleanly across breakpoints for recruiter-friendly demos.",
@@ -443,9 +443,9 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Call the Hero"
+              eyebrow="Call Ben 10 Energy"
               title="Let’s connect for internships, collaborations, or recruiter conversations"
-              kicker="Send a quick message and launch a direct mail draft with the shield signal button below."
+              kicker="Send a quick message and launch a direct mail draft with the Omnitrix signal button below."
             />
 
             <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
@@ -512,7 +512,7 @@ const Index = () => {
                 <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-sm text-muted-foreground">Fast response, clear communication, and recruiter-friendly follow-up.</p>
                   <Button variant="hero" size="xl" type="submit">
-                    Send Shield Signal <Send className="h-4 w-4" />
+                    Send Omnitrix Signal <Send className="h-4 w-4" />
                   </Button>
                 </div>
               </form>
@@ -522,7 +522,7 @@ const Index = () => {
       </main>
 
       <footer className="container relative z-10 pb-8 text-center text-sm text-muted-foreground">
-        Built for Panjam Rudra Prathap — recruiter-ready, responsive, and inspired by Captain America.
+        Built for Panjam Rudra Prathap — recruiter-ready, responsive, and charged with Ben 10 Omniverse energy.
       </footer>
     </div>
   );
