@@ -26,11 +26,11 @@ import SpiderCursor from "@/components/portfolio/SpiderCursor";
 import SpiderLoader from "@/components/portfolio/SpiderLoader";
 
 const navItems = [
-  { label: "Asgard", href: "#about" },
-  { label: "Thunder", href: "#skills" },
-  { label: "Saga", href: "#experience" },
-  { label: "Forge", href: "#projects" },
-  { label: "Summon", href: "#contact" },
+  { label: "Origin", href: "#about" },
+  { label: "Powers", href: "#skills" },
+  { label: "Rise", href: "#experience" },
+  { label: "Missions", href: "#projects" },
+  { label: "Contact", href: "#contact" },
 ];
 
 const highlights = [
@@ -111,7 +111,7 @@ const Index = () => {
       `Hi Rudra,\n\nI'm reaching out regarding an opportunity.\n\nName: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`,
     );
 
-    toast.success("Lightning dispatched — opening your mail client.");
+    toast.success("Symbiote signal sent — opening your mail client.");
     window.location.href = `mailto:rudraprathap369@gmail.com?subject=${subject}&body=${body}`;
   };
 
@@ -137,7 +137,7 @@ const Index = () => {
             ))}
           </nav>
           <Button asChild variant="signal" size="sm">
-            <a href="#contact">Summon Talent</a>
+            <a href="#contact">Hire Rudra</a>
           </Button>
         </div>
       </header>
@@ -146,16 +146,16 @@ const Index = () => {
         <section className="container grid min-h-[calc(100vh-5rem)] items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
           <div className="space-y-8 animate-web-swing">
             <span className="eyebrow-label">
-              <Zap className="h-4 w-4 text-primary" /> Thunder-Forged Developer
+              <Zap className="h-4 w-4 text-primary" /> Vibrant Venom Developer
             </span>
 
             <div className="space-y-5">
               <p className="text-lg font-semibold uppercase tracking-[0.32em] text-primary">Panjam Rudra Prathap</p>
               <h1 className="headline-display text-5xl leading-[0.92] sm:text-6xl lg:text-8xl">
-                Bringing Thor-grade force to systems, networks, and polished web experiences.
+                Symbiote-fast systems, resilient networks, and polished web experiences.
               </h1>
               <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
-                Computer Science Engineer crafting resilient interfaces, dependable network setups, and database-driven solutions with calm execution, resilience, and recruiter-ready clarity.
+                Computer Science Engineer crafting resilient interfaces, dependable network setups, and database-driven solutions with a bold Marvel edge and recruiter-ready clarity.
               </p>
             </div>
 
@@ -188,7 +188,7 @@ const Index = () => {
                 <div className="flex items-start justify-between gap-6">
                   <div>
                     <p className="text-sm font-semibold uppercase tracking-[0.28em] text-muted-foreground">Marvel-inspired portfolio</p>
-                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-muted-foreground">MCU Thor-inspired portfolio</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Vibrant Venom edition</p>
                     <p className="headline-display mt-3 text-4xl sm:text-5xl">Rudra //</p>
                   </div>
                   <div className="animate-spider-sense rounded-full border border-primary/60 bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.22em] text-primary">
@@ -201,7 +201,7 @@ const Index = () => {
                     <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Hero brief</p>
                     <p className="mt-3 text-2xl font-bold text-foreground">Java • SQL • Networking • Responsive Design</p>
                     <p className="mt-3 text-base text-muted-foreground">
-                      "Built to weather pressure and ship with precision." I turn structured thinking into stable, high-impact solutions.
+                      "Calm under pressure, sharp in execution." I turn structured thinking into clean, fast, and dependable solutions.
                     </p>
                   </div>
                   <div className="rounded-xl border border-border/70 bg-background/70 p-6 backdrop-blur-md">
@@ -234,16 +234,16 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Asgardian Origin"
-              title="Forged through discipline, curiosity, and dependable execution"
-              kicker="A recruiter-friendly origin arc showing how Rudra blends software, systems, and technical support with composure under pressure."
+              eyebrow="Symbiote Origin"
+              title="Built through discipline, curiosity, and adaptable execution"
+              kicker="A recruiter-friendly origin arc showing how Rudra blends software, systems, and technical support with confidence under pressure."
             />
 
             <div className="grid gap-5 lg:grid-cols-3">
               {[
                 "Started with a strong base in computer engineering, building discipline across hardware, software, and structured problem solving.",
                 "Expanded into networking through hands-on simulations, packet analysis, and secure infrastructure fundamentals.",
-                "Now focused on delivering polished digital products and reliable technical support with a Thor-like steady hand under pressure.",
+                "Now focused on delivering polished digital products and reliable technical support with a vibrant Venom-style edge that still feels professional.",
               ].map((copy, index) => (
                 <article key={index} className="group rounded-xl border border-border/70 bg-background/65 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-glow">
                   <p className="text-sm uppercase tracking-[0.24em] text-primary">Panel 0{index + 1}</p>
@@ -258,8 +258,8 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Stormforged Skills"
-              title="Technical strengths charged like an MCU Thor loadout"
+              eyebrow="Venom Powers"
+              title="Technical strengths mapped with vibrant symbiote energy"
               kicker="Each capability reflects practical field experience, from routing packets to building responsive interfaces."
             />
 
@@ -294,8 +294,8 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Hero Saga"
-              title="Hands-on experience forged in real technical environments"
+              eyebrow="Rise of the Builder"
+              title="Hands-on experience earned in real technical environments"
               kicker="A timeline centered on responsibility, troubleshooting, and dependable execution when systems matter."
             />
 
@@ -336,7 +336,7 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Forge Mission"
+              eyebrow="Symbiote Mission"
               title="Inventory Management System"
               kicker="A web-based build focused on asset visibility, responsive usability, and actionable reporting."
             />
@@ -387,7 +387,7 @@ const Index = () => {
 
               <aside className="space-y-6">
                 <div className="section-shell p-6">
-                  <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Mission signals</p>
+                  <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Mission alerts</p>
                   <div className="mt-4 space-y-4">
                     {[
                         "UI adapts cleanly across breakpoints for recruiter-friendly demos.",
@@ -421,7 +421,7 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Training Grounds"
+              eyebrow="Training Arc"
               title="Academic progression built on consistency and grit"
               kicker="A disciplined path through school, diploma, and engineering that established a broad technical foundation."
             />
@@ -443,9 +443,9 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Summon the Thunder"
+              eyebrow="Call Venom"
               title="Let’s connect for internships, collaborations, or recruiter conversations"
-              kicker="Send a quick message and launch a direct mail draft with the lightning call button below."
+              kicker="Send a quick message and launch a direct mail draft with the symbiote signal button below."
             />
 
             <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
@@ -512,7 +512,7 @@ const Index = () => {
                 <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-sm text-muted-foreground">Fast response, clear communication, and recruiter-friendly follow-up.</p>
                   <Button variant="hero" size="xl" type="submit">
-                    Launch Lightning Note <Send className="h-4 w-4" />
+                    Send Symbiote Signal <Send className="h-4 w-4" />
                   </Button>
                 </div>
               </form>
@@ -522,7 +522,7 @@ const Index = () => {
       </main>
 
       <footer className="container relative z-10 pb-8 text-center text-sm text-muted-foreground">
-        Built for Panjam Rudra Prathap — recruiter-ready, responsive, and forged with precision.
+        Built for Panjam Rudra Prathap — recruiter-ready, responsive, and charged with vibrant Venom energy.
       </footer>
     </div>
   );

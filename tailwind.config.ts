@@ -69,8 +69,8 @@ export default {
         xl: "calc(var(--radius) + 0.5rem)",
       },
       fontFamily: {
-        display: ["Cinzel", "serif"],
-        body: ["Exo 2", "sans-serif"],
+        display: ["Oxanium", "sans-serif"],
+        body: ["Barlow", "sans-serif"],
       },
       backgroundImage: {
         "hero-radial": "var(--gradient-hero)",
@@ -95,22 +95,22 @@ export default {
           },
         },
         "web-swing": {
-          "0%": { opacity: "0", transform: "translate3d(-22px, -48px, 0) rotate(-9deg) scale(0.96)" },
-          "60%": { opacity: "1", transform: "translate3d(12px, 10px, 0) rotate(4deg) scale(1.02)" },
+          "0%": { opacity: "0", transform: "translate3d(-20px, -30px, 0) scale(0.94) skewX(-3deg)" },
+          "60%": { opacity: "1", transform: "translate3d(10px, 6px, 0) scale(1.02) skewX(1deg)" },
           "100%": { opacity: "1", transform: "translate3d(0, 0, 0) rotate(0deg)" },
         },
         "spider-sense": {
-          "0%, 100%": { boxShadow: "0 0 0 0 hsl(var(--glow) / 0.18), 0 0 0 1px hsl(var(--primary) / 0.18)" },
-          "50%": { boxShadow: "0 0 0 16px hsl(var(--glow) / 0), 0 0 24px hsl(var(--glow) / 0.26)" },
+          "0%, 100%": { boxShadow: "0 0 0 0 hsl(var(--glow) / 0.22), 0 0 0 1px hsl(var(--primary) / 0.24)" },
+          "50%": { boxShadow: "0 0 0 18px hsl(var(--glow) / 0), 0 0 30px hsl(var(--glow) / 0.34)" },
         },
         float: {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
         },
         crawl: {
-          "0%": { transform: "translate(-50%, -50%) rotate(-10deg)" },
-          "50%": { transform: "translate(-50%, -58%) rotate(4deg)" },
-          "100%": { transform: "translate(-50%, -50%) rotate(-10deg)" },
+          "0%": { transform: "translate(-50%, -50%) scaleX(0.96) rotate(-4deg)" },
+          "50%": { transform: "translate(-50%, -56%) scaleX(1.04) rotate(3deg)" },
+          "100%": { transform: "translate(-50%, -50%) scaleX(0.96) rotate(-4deg)" },
         },
         shimmer: {
           "0%": { backgroundPosition: "0% 50%" },
@@ -127,9 +127,9 @@ export default {
         shimmer: "shimmer 2.5s linear infinite",
       },
       boxShadow: {
-        panel: "0 22px 64px -30px hsl(var(--hero) / 0.9)",
-        glow: "0 0 0 1px hsl(var(--border)), 0 0 28px hsl(var(--glow) / 0.3)",
-        hero: "0 32px 82px -30px hsl(var(--primary) / 0.38)",
+        panel: "0 24px 70px -32px hsl(var(--hero) / 0.95)",
+        glow: "0 0 0 1px hsl(var(--border)), 0 0 30px hsl(var(--glow) / 0.36)",
+        hero: "0 36px 90px -34px hsl(var(--primary) / 0.28)",
       },
     },
   },
