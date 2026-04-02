@@ -7,6 +7,7 @@ import {
   Code2,
   Database,
   ExternalLink,
+  Eye,
   GraduationCap,
   Linkedin,
   Mail,
@@ -26,9 +27,9 @@ import SpiderCursor from "@/components/portfolio/SpiderCursor";
 import SpiderLoader from "@/components/portfolio/SpiderLoader";
 
 const navItems = [
-  { label: "Origin", href: "#about" },
-  { label: "Powers", href: "#skills" },
-  { label: "Rise", href: "#experience" },
+  { label: "Domain", href: "#about" },
+  { label: "Techniques", href: "#skills" },
+  { label: "Journey", href: "#experience" },
   { label: "Missions", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
@@ -111,7 +112,7 @@ const Index = () => {
       `Hi Rudra,\n\nI'm reaching out regarding an opportunity.\n\nName: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`,
     );
 
-    toast.success("Omnitrix signal sent — opening your mail client.");
+    toast.success("Infinite Void activated — opening your mail client.");
     window.location.href = `mailto:rudraprathap369@gmail.com?subject=${subject}&body=${body}`;
   };
 
@@ -121,7 +122,7 @@ const Index = () => {
       <SpiderCursor />
 
       <div className="pointer-events-none absolute inset-0 opacity-50">
-        <div className="web-grid absolute inset-0" />
+        <div className="web-grid infinity-particles absolute inset-0" />
         <div className="hero-orb left-[-12rem] top-8 h-80 w-80" />
         <div className="hero-orb bottom-24 right-[-8rem] h-72 w-72" />
       </div>
@@ -137,42 +138,43 @@ const Index = () => {
             ))}
           </nav>
           <Button asChild variant="signal" size="sm">
-            <a href="#contact">Activate Contact</a>
+            <a href="#contact"><Eye className="h-4 w-4" /> Six Eyes</a>
           </Button>
         </div>
       </header>
 
       <main id="home" className="relative z-10">
+        {/* ─── HERO ─── */}
         <section className="container grid min-h-[calc(100vh-5rem)] items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
           <div className="space-y-8 animate-web-swing">
             <span className="eyebrow-label">
-              <Zap className="h-4 w-4 text-primary" /> Ben 10 Omniverse Developer
+              <Eye className="h-4 w-4 text-primary" /> The Strongest Sorcerer
             </span>
 
             <div className="space-y-5">
               <p className="text-lg font-semibold uppercase tracking-[0.32em] text-primary">Panjam Rudra Prathap</p>
               <h1 className="headline-display text-5xl leading-[0.92] sm:text-6xl lg:text-8xl">
-                Omnitrix-powered systems, adaptive networks, and polished web experiences.
+                Infinity-grade systems, limitless networks, and boundless web experiences.
               </h1>
               <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
-                Computer Science Engineer crafting reliable interfaces, adaptive network setups, and database-driven solutions with bold sci-fi energy and recruiter-ready polish.
+                Computer Science Engineer crafting invincible interfaces, infinite-scale network setups, and database-driven solutions with Gojo-level confidence and recruiter-ready polish.
               </p>
             </div>
 
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button asChild variant="hero" size="xl">
                 <a href="#projects">
-                  View Projects <ArrowRight className="h-4 w-4" />
+                  View Missions <ArrowRight className="h-4 w-4" />
                 </a>
               </Button>
               <Button asChild variant="signal" size="xl">
-                <a href="#contact">Contact Me</a>
+                <a href="#contact">Domain Expansion</a>
               </Button>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-3">
               {highlights.map((item) => (
-                <div key={item.label} className="section-shell p-4 text-left">
+                <div key={item.label} className="section-shell p-4 text-left animate-domain-expand">
                   <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">{item.label}</p>
                   <p className="mt-2 text-3xl font-bold text-foreground">{item.value}</p>
                   <p className="text-sm text-muted-foreground">{item.note}</p>
@@ -187,8 +189,8 @@ const Index = () => {
               <div className="relative flex flex-col gap-8">
                 <div className="flex items-start justify-between gap-6">
                   <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-muted-foreground">Marvel-inspired portfolio</p>
-                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Ben 10 Omniverse edition</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-muted-foreground">Jujutsu Kaisen portfolio</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Gojo Satoru edition</p>
                     <p className="headline-display mt-3 text-4xl sm:text-5xl">Rudra //</p>
                   </div>
                   <div className="animate-spider-sense rounded-full border border-primary/60 bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.22em] text-primary">
@@ -198,14 +200,14 @@ const Index = () => {
 
                 <div className="grid gap-4 sm:grid-cols-[1.2fr_0.8fr]">
                   <div className="rounded-xl border border-border/70 bg-background/70 p-6 backdrop-blur-md">
-                    <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Hero brief</p>
+                    <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Sorcerer brief</p>
                     <p className="mt-3 text-2xl font-bold text-foreground">Java • SQL • Networking • Responsive Design</p>
                     <p className="mt-3 text-base text-muted-foreground">
-                      "Always ready to transform ideas into action." I turn structured thinking into clear, fast, and dependable solutions.
+                      "Throughout Heaven and Earth, I alone am the honored one." I turn structured thinking into limitless, fast, and dependable solutions.
                     </p>
                   </div>
                   <div className="rounded-xl border border-border/70 bg-background/70 p-6 backdrop-blur-md">
-                    <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Current focus</p>
+                    <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Cursed techniques</p>
                     <ul className="mt-3 space-y-3 text-sm text-muted-foreground">
                       <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> Frontend engineering</li>
                       <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> Network operations</li>
@@ -230,23 +232,24 @@ const Index = () => {
           </div>
         </section>
 
+        {/* ─── ABOUT / DOMAIN ─── */}
         <section id="about" className="container py-8 sm:py-12">
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Omniverse Origin"
-              title="Built through discipline, curiosity, and adaptive execution"
-              kicker="A recruiter-friendly origin arc showing how Rudra blends software, systems, and technical support with confidence, flexibility, and sharp problem solving."
+              eyebrow="Domain Expansion"
+              title="Built through limitless curiosity, discipline, and infinite execution"
+              kicker="A recruiter-friendly origin arc showing how Rudra channels Six Eyes-level perception across software, systems, and technical support."
             />
 
             <div className="grid gap-5 lg:grid-cols-3">
               {[
-                "Started with a strong base in computer engineering, building discipline across hardware, software, and structured problem solving.",
-                "Expanded into networking through hands-on simulations, packet analysis, and secure infrastructure fundamentals.",
-                "Now focused on delivering polished digital products and reliable technical support with a Ben 10-style readiness to adapt, solve, and level up fast.",
+                "Started with a strong base in computer engineering, building discipline across hardware, software, and structured problem solving — like mastering the basics at Jujutsu High.",
+                "Expanded into networking through hands-on simulations, packet analysis, and secure infrastructure fundamentals — sharpening perception like the Six Eyes.",
+                "Now focused on delivering polished digital products and reliable technical support with Gojo-level confidence to adapt, solve, and dominate any challenge.",
               ].map((copy, index) => (
                 <article key={index} className="group rounded-xl border border-border/70 bg-background/65 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-glow">
-                  <p className="text-sm uppercase tracking-[0.24em] text-primary">Panel 0{index + 1}</p>
+                  <p className="text-sm uppercase tracking-[0.24em] text-primary">Grade {index + 1}</p>
                   <p className="mt-4 text-lg text-muted-foreground">{copy}</p>
                 </article>
               ))}
@@ -254,13 +257,14 @@ const Index = () => {
           </div>
         </section>
 
+        {/* ─── SKILLS / TECHNIQUES ─── */}
         <section id="skills" className="container py-8 sm:py-12">
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Alien Powers"
-              title="Technical strengths mapped like Omnitrix transformations"
-              kicker="Each capability reflects practical field experience, from routing packets to building responsive interfaces."
+              eyebrow="Cursed Techniques"
+              title="Technical strengths mapped like jujutsu cursed energy"
+              kicker="Each capability reflects practical field experience, from routing packets to building responsive interfaces — all channeled with limitless precision."
             />
 
             <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-4">
@@ -290,13 +294,14 @@ const Index = () => {
           </div>
         </section>
 
+        {/* ─── EXPERIENCE / JOURNEY ─── */}
         <section id="experience" className="container py-8 sm:py-12">
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Hero Journey"
-              title="Hands-on experience earned across evolving technical environments"
-              kicker="A timeline centered on responsibility, troubleshooting, and dependable execution when systems matter."
+              eyebrow="Sorcerer's Journey"
+              title="Hands-on experience earned across evolving technical battlefields"
+              kicker="A timeline centered on responsibility, troubleshooting, and dependable execution — like a Special Grade sorcerer on every mission."
             />
 
             <div className="relative space-y-6 before:absolute before:left-[1.15rem] before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-border/70 sm:before:left-1/2 sm:before:-translate-x-1/2">
@@ -332,32 +337,26 @@ const Index = () => {
           </div>
         </section>
 
+        {/* ─── PROJECTS / MISSIONS ─── */}
         <section id="projects" className="container py-8 sm:py-12">
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Mission Mode"
+              eyebrow="Special Grade Mission"
               title="Inventory Management System"
-              kicker="A web-based build focused on asset visibility, responsive usability, and actionable reporting."
+              kicker="A web-based build focused on asset visibility, responsive usability, and actionable reporting — executed with Infinity-level precision."
             />
 
             <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
               <article className="group rounded-xl border border-border/70 bg-background/60 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/70 hover:shadow-glow">
                 <div className="flex flex-wrap gap-2">
-                  {[
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "SQL",
-                    "Responsive UI",
-                    "Reporting",
-                  ].map((tag) => (
+                  {["HTML", "CSS", "JavaScript", "SQL", "Responsive UI", "Reporting"].map((tag) => (
                     <span key={tag} className="panel-badge">{tag}</span>
                   ))}
                 </div>
                 <h3 className="mt-6 text-3xl font-bold text-foreground">Mission brief</h3>
                 <p className="mt-4 text-lg text-muted-foreground">
-                  Designed to automate asset tracking with a clean UI, data-driven reporting, and alert-oriented workflows that make inventory monitoring faster and more reliable.
+                  Designed to automate asset tracking with a clean UI, data-driven reporting, and alert-oriented workflows — nothing gets past the Infinity barrier.
                 </p>
 
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -387,12 +386,12 @@ const Index = () => {
 
               <aside className="space-y-6">
                 <div className="section-shell p-6">
-                  <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Omnitrix alerts</p>
+                  <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Six Eyes insights</p>
                   <div className="mt-4 space-y-4">
                     {[
-                        "UI adapts cleanly across breakpoints for recruiter-friendly demos.",
-                        "Asset data stays organized for speed, clarity, and reporting.",
-                        "Alert workflows improve response time when stock issues appear.",
+                      "UI adapts cleanly across breakpoints for recruiter-friendly demos.",
+                      "Asset data stays organized for speed, clarity, and reporting.",
+                      "Alert workflows improve response time when stock issues appear.",
                     ].map((item) => (
                       <div key={item} className="animate-spider-sense rounded-xl border border-primary/40 bg-primary/10 p-4 text-sm text-foreground">
                         {item}
@@ -417,13 +416,14 @@ const Index = () => {
           </div>
         </section>
 
+        {/* ─── EDUCATION ─── */}
         <section id="education" className="container py-8 sm:py-12">
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Training Arc"
-              title="Academic progression built on consistency and grit"
-              kicker="A disciplined path through school, diploma, and engineering that established a broad technical foundation."
+              eyebrow="Jujutsu High"
+              title="Academic progression built on discipline and limitless potential"
+              kicker="A disciplined path through school, diploma, and engineering — leveling up like a sorcerer through the ranks."
             />
 
             <div className="grid gap-5 md:grid-cols-3">
@@ -439,13 +439,14 @@ const Index = () => {
           </div>
         </section>
 
+        {/* ─── CONTACT ─── */}
         <section id="contact" className="container py-8 pb-20 sm:py-12 sm:pb-24">
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Call Ben 10 Energy"
-              title="Let’s connect for internships, collaborations, or recruiter conversations"
-              kicker="Send a quick message and launch a direct mail draft with the Omnitrix signal button below."
+              eyebrow="Infinite Void"
+              title="Let's connect for internships, collaborations, or recruiter conversations"
+              kicker="Send a quick message and launch a direct mail draft with the Hollow Purple signal below."
             />
 
             <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
@@ -512,7 +513,7 @@ const Index = () => {
                 <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-sm text-muted-foreground">Fast response, clear communication, and recruiter-friendly follow-up.</p>
                   <Button variant="hero" size="xl" type="submit">
-                    Send Omnitrix Signal <Send className="h-4 w-4" />
+                    Hollow Purple <Send className="h-4 w-4" />
                   </Button>
                 </div>
               </form>
@@ -522,7 +523,7 @@ const Index = () => {
       </main>
 
       <footer className="container relative z-10 pb-8 text-center text-sm text-muted-foreground">
-        Built for Panjam Rudra Prathap — recruiter-ready, responsive, and charged with Ben 10 Omniverse energy.
+        Built for Panjam Rudra Prathap — recruiter-ready, responsive, and charged with Gojo Satoru energy. ∞
       </footer>
     </div>
   );
