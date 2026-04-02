@@ -27,9 +27,9 @@ import SpiderCursor from "@/components/portfolio/SpiderCursor";
 import SpiderLoader from "@/components/portfolio/SpiderLoader";
 
 const navItems = [
-  { label: "Domain", href: "#about" },
-  { label: "Techniques", href: "#skills" },
-  { label: "Journey", href: "#experience" },
+  { label: "Origin", href: "#about" },
+  { label: "Jutsu", href: "#skills" },
+  { label: "Path", href: "#experience" },
   { label: "Missions", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
@@ -112,7 +112,7 @@ const Index = () => {
       `Hi Rudra,\n\nI'm reaching out regarding an opportunity.\n\nName: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`,
     );
 
-    toast.success("Infinite Void activated — opening your mail client.");
+    toast.success("Tsukuyomi activated — opening your mail client.");
     window.location.href = `mailto:rudraprathap369@gmail.com?subject=${subject}&body=${body}`;
   };
 
@@ -121,8 +121,8 @@ const Index = () => {
       <SpiderLoader visible={loading} />
       <SpiderCursor />
 
-      <div className="pointer-events-none absolute inset-0 opacity-50">
-        <div className="web-grid infinity-particles absolute inset-0" />
+      <div className="pointer-events-none absolute inset-0 opacity-40">
+        <div className="web-grid absolute inset-0" />
         <div className="hero-orb left-[-12rem] top-8 h-80 w-80" />
         <div className="hero-orb bottom-24 right-[-8rem] h-72 w-72" />
       </div>
@@ -138,7 +138,7 @@ const Index = () => {
             ))}
           </nav>
           <Button asChild variant="signal" size="sm">
-            <a href="#contact"><Eye className="h-4 w-4" /> Six Eyes</a>
+            <a href="#contact"><Eye className="h-4 w-4" /> Sharingan</a>
           </Button>
         </div>
       </header>
@@ -148,16 +148,16 @@ const Index = () => {
         <section className="container grid min-h-[calc(100vh-5rem)] items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
           <div className="space-y-8 animate-web-swing">
             <span className="eyebrow-label">
-              <Eye className="h-4 w-4 text-primary" /> The Strongest Sorcerer
+              <Eye className="h-4 w-4 text-primary" /> Uchiha Prodigy
             </span>
 
             <div className="space-y-5">
               <p className="text-lg font-semibold uppercase tracking-[0.32em] text-primary">Panjam Rudra Prathap</p>
               <h1 className="headline-display text-5xl leading-[0.92] sm:text-6xl lg:text-8xl">
-                Infinity-grade systems, limitless networks, and boundless web experiences.
+                Sharingan-sharp systems, silent precision, and flawless execution.
               </h1>
               <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
-                Computer Science Engineer crafting invincible interfaces, infinite-scale network setups, and database-driven solutions with Gojo-level confidence and recruiter-ready polish.
+                Computer Science Engineer crafting decisive interfaces, strategic network architectures, and database-driven solutions — with the quiet mastery and foresight of Itachi Uchiha.
               </p>
             </div>
 
@@ -168,13 +168,13 @@ const Index = () => {
                 </a>
               </Button>
               <Button asChild variant="signal" size="xl">
-                <a href="#contact">Domain Expansion</a>
+                <a href="#contact">Tsukuyomi</a>
               </Button>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-3">
               {highlights.map((item) => (
-                <div key={item.label} className="section-shell p-4 text-left animate-domain-expand">
+                <div key={item.label} className="section-shell p-4 text-left">
                   <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">{item.label}</p>
                   <p className="mt-2 text-3xl font-bold text-foreground">{item.value}</p>
                   <p className="text-sm text-muted-foreground">{item.note}</p>
@@ -189,25 +189,25 @@ const Index = () => {
               <div className="relative flex flex-col gap-8">
                 <div className="flex items-start justify-between gap-6">
                   <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-muted-foreground">Jujutsu Kaisen portfolio</p>
-                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Gojo Satoru edition</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-muted-foreground">Naruto-inspired portfolio</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.28em] text-primary">Itachi Uchiha edition</p>
                     <p className="headline-display mt-3 text-4xl sm:text-5xl">Rudra //</p>
                   </div>
-                  <div className="animate-spider-sense rounded-full border border-primary/60 bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.22em] text-primary">
+                  <div className="animate-amaterasu-flicker rounded-full border border-primary/60 bg-primary/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.22em] text-primary">
                     Open to roles
                   </div>
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-[1.2fr_0.8fr]">
                   <div className="rounded-xl border border-border/70 bg-background/70 p-6 backdrop-blur-md">
-                    <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Sorcerer brief</p>
+                    <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Shinobi brief</p>
                     <p className="mt-3 text-2xl font-bold text-foreground">Java • SQL • Networking • Responsive Design</p>
                     <p className="mt-3 text-base text-muted-foreground">
-                      "Throughout Heaven and Earth, I alone am the honored one." I turn structured thinking into limitless, fast, and dependable solutions.
+                      "Those who cannot acknowledge themselves will eventually fail." I turn quiet discipline into decisive, fast, and dependable solutions.
                     </p>
                   </div>
                   <div className="rounded-xl border border-border/70 bg-background/70 p-6 backdrop-blur-md">
-                    <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Cursed techniques</p>
+                    <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Kekkei Genkai</p>
                     <ul className="mt-3 space-y-3 text-sm text-muted-foreground">
                       <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> Frontend engineering</li>
                       <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> Network operations</li>
@@ -232,24 +232,24 @@ const Index = () => {
           </div>
         </section>
 
-        {/* ─── ABOUT / DOMAIN ─── */}
+        {/* ─── ABOUT / ORIGIN ─── */}
         <section id="about" className="container py-8 sm:py-12">
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Domain Expansion"
-              title="Built through limitless curiosity, discipline, and infinite execution"
-              kicker="A recruiter-friendly origin arc showing how Rudra channels Six Eyes-level perception across software, systems, and technical support."
+              eyebrow="Clan Origin"
+              title="Forged through sacrifice, silence, and relentless mastery"
+              kicker="A recruiter-friendly origin arc showing how Rudra channels Uchiha-level discipline across software, systems, and technical support."
             />
 
             <div className="grid gap-5 lg:grid-cols-3">
               {[
-                "Started with a strong base in computer engineering, building discipline across hardware, software, and structured problem solving — like mastering the basics at Jujutsu High.",
-                "Expanded into networking through hands-on simulations, packet analysis, and secure infrastructure fundamentals — sharpening perception like the Six Eyes.",
-                "Now focused on delivering polished digital products and reliable technical support with Gojo-level confidence to adapt, solve, and dominate any challenge.",
+                "Started with a strong base in computer engineering, building discipline across hardware, software, and structured problem solving — like graduating from the Academy as a prodigy.",
+                "Expanded into networking through hands-on simulations, packet analysis, and secure infrastructure — sharpening perception with Sharingan-like precision.",
+                "Now focused on delivering polished digital products and reliable technical support with Itachi-level foresight to anticipate, adapt, and execute flawlessly.",
               ].map((copy, index) => (
                 <article key={index} className="group rounded-xl border border-border/70 bg-background/65 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-glow">
-                  <p className="text-sm uppercase tracking-[0.24em] text-primary">Grade {index + 1}</p>
+                  <p className="text-sm uppercase tracking-[0.24em] text-primary">Scroll 0{index + 1}</p>
                   <p className="mt-4 text-lg text-muted-foreground">{copy}</p>
                 </article>
               ))}
@@ -257,14 +257,14 @@ const Index = () => {
           </div>
         </section>
 
-        {/* ─── SKILLS / TECHNIQUES ─── */}
+        {/* ─── SKILLS / JUTSU ─── */}
         <section id="skills" className="container py-8 sm:py-12">
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Cursed Techniques"
-              title="Technical strengths mapped like jujutsu cursed energy"
-              kicker="Each capability reflects practical field experience, from routing packets to building responsive interfaces — all channeled with limitless precision."
+              eyebrow="Forbidden Jutsu"
+              title="Technical strengths honed like Sharingan tomoe"
+              kicker="Each capability reflects battle-tested field experience, from routing packets to building responsive interfaces — all wielded with deadly precision."
             />
 
             <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-4">
@@ -294,14 +294,14 @@ const Index = () => {
           </div>
         </section>
 
-        {/* ─── EXPERIENCE / JOURNEY ─── */}
+        {/* ─── EXPERIENCE / PATH ─── */}
         <section id="experience" className="container py-8 sm:py-12">
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Sorcerer's Journey"
-              title="Hands-on experience earned across evolving technical battlefields"
-              kicker="A timeline centered on responsibility, troubleshooting, and dependable execution — like a Special Grade sorcerer on every mission."
+              eyebrow="Shinobi Path"
+              title="Hands-on experience earned in the shadows of real systems"
+              kicker="A timeline centered on responsibility, troubleshooting, and flawless execution — every mission completed like a true ANBU operative."
             />
 
             <div className="relative space-y-6 before:absolute before:left-[1.15rem] before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-border/70 sm:before:left-1/2 sm:before:-translate-x-1/2">
@@ -342,9 +342,9 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Special Grade Mission"
+              eyebrow="S-Rank Mission"
               title="Inventory Management System"
-              kicker="A web-based build focused on asset visibility, responsive usability, and actionable reporting — executed with Infinity-level precision."
+              kicker="A web-based build focused on asset visibility, responsive usability, and actionable reporting — executed with surgical Uchiha precision."
             />
 
             <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
@@ -354,9 +354,9 @@ const Index = () => {
                     <span key={tag} className="panel-badge">{tag}</span>
                   ))}
                 </div>
-                <h3 className="mt-6 text-3xl font-bold text-foreground">Mission brief</h3>
+                <h3 className="mt-6 text-3xl font-bold text-foreground">Mission scroll</h3>
                 <p className="mt-4 text-lg text-muted-foreground">
-                  Designed to automate asset tracking with a clean UI, data-driven reporting, and alert-oriented workflows — nothing gets past the Infinity barrier.
+                  Designed to automate asset tracking with a clean UI, data-driven reporting, and alert-oriented workflows — no detail escapes the Sharingan.
                 </p>
 
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -386,14 +386,14 @@ const Index = () => {
 
               <aside className="space-y-6">
                 <div className="section-shell p-6">
-                  <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Six Eyes insights</p>
+                  <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Sharingan insights</p>
                   <div className="mt-4 space-y-4">
                     {[
                       "UI adapts cleanly across breakpoints for recruiter-friendly demos.",
                       "Asset data stays organized for speed, clarity, and reporting.",
                       "Alert workflows improve response time when stock issues appear.",
                     ].map((item) => (
-                      <div key={item} className="animate-spider-sense rounded-xl border border-primary/40 bg-primary/10 p-4 text-sm text-foreground">
+                      <div key={item} className="animate-amaterasu-flicker rounded-xl border border-primary/40 bg-primary/10 p-4 text-sm text-foreground">
                         {item}
                       </div>
                     ))}
@@ -421,9 +421,9 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Jujutsu High"
-              title="Academic progression built on discipline and limitless potential"
-              kicker="A disciplined path through school, diploma, and engineering — leveling up like a sorcerer through the ranks."
+              eyebrow="Academy Records"
+              title="Academic progression built on prodigy-level discipline"
+              kicker="A path through school, diploma, and engineering — each rank achieved with Uchiha-level mastery and quiet determination."
             />
 
             <div className="grid gap-5 md:grid-cols-3">
@@ -444,9 +444,9 @@ const Index = () => {
           <div className="web-divider" />
           <div className="section-shell p-6 sm:p-8 lg:p-10">
             <SectionTitle
-              eyebrow="Infinite Void"
+              eyebrow="Summoning Jutsu"
               title="Let's connect for internships, collaborations, or recruiter conversations"
-              kicker="Send a quick message and launch a direct mail draft with the Hollow Purple signal below."
+              kicker="Send a quick message and launch a direct mail draft with the Amaterasu signal below."
             />
 
             <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
@@ -513,7 +513,7 @@ const Index = () => {
                 <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-sm text-muted-foreground">Fast response, clear communication, and recruiter-friendly follow-up.</p>
                   <Button variant="hero" size="xl" type="submit">
-                    Hollow Purple <Send className="h-4 w-4" />
+                    Amaterasu <Send className="h-4 w-4" />
                   </Button>
                 </div>
               </form>
@@ -523,7 +523,7 @@ const Index = () => {
       </main>
 
       <footer className="container relative z-10 pb-8 text-center text-sm text-muted-foreground">
-        Built for Panjam Rudra Prathap — recruiter-ready, responsive, and charged with Gojo Satoru energy. ∞
+        Built for Panjam Rudra Prathap — recruiter-ready, responsive, and forged with Itachi Uchiha's silent mastery. 写輪眼
       </footer>
     </div>
   );

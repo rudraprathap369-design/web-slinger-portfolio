@@ -69,8 +69,8 @@ export default {
         xl: "calc(var(--radius) + 0.5rem)",
       },
       fontFamily: {
-        display: ["Rajdhani", "sans-serif"],
-        body: ["Space Grotesk", "sans-serif"],
+        display: ["Cinzel", "serif"],
+        body: ["Nunito Sans", "sans-serif"],
       },
       backgroundImage: {
         "hero-radial": "var(--gradient-hero)",
@@ -87,21 +87,21 @@ export default {
           to: { height: "0" },
         },
         "web-swing": {
-          "0%": { opacity: "0", transform: "translateY(20px) scale(0.96)" },
-          "60%": { opacity: "1", transform: "translateY(-4px) scale(1.01)" },
+          "0%": { opacity: "0", transform: "translateY(16px) scale(0.97)" },
+          "60%": { opacity: "1", transform: "translateY(-3px) scale(1.01)" },
           "100%": { opacity: "1", transform: "translateY(0) scale(1)" },
         },
         "spider-sense": {
-          "0%, 100%": { boxShadow: "0 0 0 0 hsl(var(--glow) / 0.2), 0 0 0 1px hsl(var(--primary) / 0.2)" },
-          "50%": { boxShadow: "0 0 0 16px hsl(var(--glow) / 0), 0 0 36px hsl(var(--glow) / 0.3)" },
+          "0%, 100%": { boxShadow: "0 0 0 0 hsl(var(--glow) / 0.15), 0 0 0 1px hsl(var(--primary) / 0.2)" },
+          "50%": { boxShadow: "0 0 0 14px hsl(var(--glow) / 0), 0 0 28px hsl(var(--glow) / 0.25)" },
         },
         pulse: {
           "0%, 100%": { transform: "scale(1)", opacity: "0.85" },
-          "50%": { transform: "scale(1.06)", opacity: "1" },
+          "50%": { transform: "scale(1.05)", opacity: "1" },
         },
         float: {
           "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-12px)" },
+          "50%": { transform: "translateY(-10px)" },
         },
         crawl: {
           "0%": { transform: "translate(-50%, -50%) scale(0.96) rotate(-4deg)" },
@@ -116,20 +116,18 @@ export default {
           "0%, 100%": { borderRadius: "28% 72% 57% 43% / 41% 40% 60% 59%" },
           "50%": { borderRadius: "58% 42% 31% 69% / 43% 63% 37% 57%" },
         },
-        "infinity-spin": {
-          "0%": { transform: "rotate(0deg) scale(1)", opacity: "0.6" },
-          "50%": { transform: "rotate(180deg) scale(1.15)", opacity: "1" },
-          "100%": { transform: "rotate(360deg) scale(1)", opacity: "0.6" },
+        "sharingan-spin": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
-        "domain-expand": {
-          "0%": { transform: "scale(0)", opacity: "0", borderRadius: "50%" },
-          "60%": { transform: "scale(1.1)", opacity: "0.9", borderRadius: "20%" },
-          "100%": { transform: "scale(1)", opacity: "1", borderRadius: "var(--radius)" },
+        "amaterasu-flicker": {
+          "0%, 100%": { opacity: "0.6", boxShadow: "0 0 8px hsl(var(--primary) / 0.3)" },
+          "50%": { opacity: "1", boxShadow: "0 0 24px hsl(var(--primary) / 0.6), 0 0 48px hsl(var(--accent) / 0.2)" },
         },
-        "hollow-purple": {
-          "0%": { background: "hsl(var(--primary))", boxShadow: "0 0 0 0 hsl(var(--primary) / 0.4)" },
-          "50%": { background: "hsl(var(--accent))", boxShadow: "0 0 40px 10px hsl(var(--accent) / 0.5)" },
-          "100%": { background: "hsl(var(--primary))", boxShadow: "0 0 0 0 hsl(var(--primary) / 0.4)" },
+        "tsukuyomi-fade": {
+          "0%": { filter: "brightness(1) saturate(1)" },
+          "50%": { filter: "brightness(0.7) saturate(1.4)" },
+          "100%": { filter: "brightness(1) saturate(1)" },
         },
       },
       animation: {
@@ -142,14 +140,14 @@ export default {
         shimmer: "shimmer 2.5s linear infinite",
         pulse: "pulse 2.5s ease-in-out infinite",
         morph: "morph 8s ease-in-out infinite",
-        "infinity-spin": "infinity-spin 6s linear infinite",
-        "domain-expand": "domain-expand 0.7s cubic-bezier(0.22, 1, 0.36, 1)",
-        "hollow-purple": "hollow-purple 3s ease-in-out infinite",
+        "sharingan-spin": "sharingan-spin 8s linear infinite",
+        "amaterasu-flicker": "amaterasu-flicker 3s ease-in-out infinite",
+        "tsukuyomi-fade": "tsukuyomi-fade 6s ease-in-out infinite",
       },
       boxShadow: {
-        panel: "0 26px 80px -36px hsl(var(--hero) / 0.8)",
-        glow: "0 0 0 1px hsl(var(--border)), 0 0 30px hsl(var(--glow) / 0.28)",
-        hero: "0 40px 96px -34px hsl(var(--primary) / 0.3)",
+        panel: "0 26px 80px -36px hsl(var(--hero) / 0.7)",
+        glow: "0 0 0 1px hsl(var(--border)), 0 0 24px hsl(var(--glow) / 0.2)",
+        hero: "0 40px 96px -34px hsl(var(--primary) / 0.24)",
       },
     },
   },
