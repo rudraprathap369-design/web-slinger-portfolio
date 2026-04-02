@@ -1,63 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Nunito+Sans:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Gojo Satoru — Jujutsu Kaisen Design System
-   Infinity-inspired: electric indigo, icy blue, deep void black
+/* Itachi Uchiha — Naruto Design System
+   Sharingan crimson, midnight void, subtle amaterasu accents
    All colors HSL.
 */
 
 @layer base {
   :root {
-    --background: 230 28% 6%;
-    --foreground: 220 30% 96%;
+    --background: 0 12% 6%;
+    --foreground: 0 8% 94%;
 
-    --surface: 228 24% 11%;
-    --panel: 230 26% 14%;
-    --glow: 230 100% 68%;
-    --hero: 220 64% 18%;
+    --surface: 0 10% 10%;
+    --panel: 0 12% 13%;
+    --glow: 0 88% 52%;
+    --hero: 0 40% 14%;
 
-    --card: 228 24% 9%;
-    --card-foreground: 220 30% 96%;
+    --card: 0 10% 9%;
+    --card-foreground: 0 8% 94%;
 
-    --popover: 228 24% 9%;
-    --popover-foreground: 220 30% 96%;
+    --popover: 0 10% 9%;
+    --popover-foreground: 0 8% 94%;
 
-    --primary: 230 100% 68%;
-    --primary-foreground: 230 28% 6%;
+    --primary: 0 88% 52%;
+    --primary-foreground: 0 12% 6%;
 
-    --secondary: 196 80% 52%;
-    --secondary-foreground: 220 30% 96%;
+    --secondary: 0 60% 28%;
+    --secondary-foreground: 0 8% 94%;
 
-    --muted: 228 16% 18%;
-    --muted-foreground: 220 14% 68%;
+    --muted: 0 8% 18%;
+    --muted-foreground: 0 6% 64%;
 
-    --accent: 270 80% 68%;
-    --accent-foreground: 230 28% 6%;
+    --accent: 30 80% 52%;
+    --accent-foreground: 0 12% 6%;
 
     --destructive: 0 78% 58%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 228 18% 22%;
-    --input: 228 18% 16%;
-    --ring: 230 100% 68%;
+    --border: 0 10% 20%;
+    --input: 0 10% 15%;
+    --ring: 0 88% 52%;
 
     --radius: 1rem;
 
-    --gradient-hero: radial-gradient(circle at 20% 14%, hsl(var(--glow) / 0.28), transparent 28%), radial-gradient(circle at 82% 18%, hsl(var(--accent) / 0.16), transparent 22%), linear-gradient(145deg, hsl(var(--secondary) / 0.12), hsl(var(--background)) 56%, hsl(var(--hero)));
+    --gradient-hero: radial-gradient(circle at 20% 14%, hsl(var(--glow) / 0.2), transparent 28%), radial-gradient(circle at 82% 18%, hsl(var(--accent) / 0.1), transparent 22%), linear-gradient(145deg, hsl(var(--secondary) / 0.15), hsl(var(--background)) 56%, hsl(var(--hero)));
     --gradient-panel: linear-gradient(145deg, hsl(var(--card) / 0.98), hsl(var(--panel) / 0.92));
-    --pattern-web: radial-gradient(circle at center, hsl(var(--glow) / 0.12) 1px, transparent 1.5px), linear-gradient(90deg, transparent 0 46%, hsl(var(--primary) / 0.06) 50%, transparent 54%), linear-gradient(0deg, transparent 0 46%, hsl(var(--accent) / 0.05) 50%, transparent 54%);
+    --pattern-web: radial-gradient(circle at center, hsl(var(--glow) / 0.08) 1px, transparent 1.5px), linear-gradient(90deg, transparent 0 46%, hsl(var(--primary) / 0.04) 50%, transparent 54%), linear-gradient(0deg, transparent 0 46%, hsl(var(--accent) / 0.03) 50%, transparent 54%);
 
-    --sidebar-background: 228 24% 9%;
-    --sidebar-foreground: 220 30% 96%;
-    --sidebar-primary: 230 100% 68%;
-    --sidebar-primary-foreground: 230 28% 6%;
-    --sidebar-accent: 230 26% 14%;
-    --sidebar-accent-foreground: 220 30% 96%;
-    --sidebar-border: 228 18% 22%;
-    --sidebar-ring: 230 100% 68%;
+    --sidebar-background: 0 10% 9%;
+    --sidebar-foreground: 0 8% 94%;
+    --sidebar-primary: 0 88% 52%;
+    --sidebar-primary-foreground: 0 12% 6%;
+    --sidebar-accent: 0 12% 13%;
+    --sidebar-accent-foreground: 0 8% 94%;
+    --sidebar-border: 0 10% 20%;
+    --sidebar-ring: 0 88% 52%;
   }
 }
 
@@ -72,12 +72,12 @@
 
   body {
     @apply bg-background text-foreground font-body;
-    background-image: radial-gradient(circle at top, hsl(var(--glow) / 0.1), transparent 28%), radial-gradient(circle at 76% 14%, hsl(var(--accent) / 0.08), transparent 20%), linear-gradient(180deg, hsl(var(--background)), hsl(var(--hero)) 46%, hsl(var(--background)) 100%);
+    background-image: radial-gradient(circle at top, hsl(var(--glow) / 0.07), transparent 28%), radial-gradient(circle at 76% 14%, hsl(var(--accent) / 0.05), transparent 20%), linear-gradient(180deg, hsl(var(--background)), hsl(var(--hero)) 46%, hsl(var(--background)) 100%);
     min-height: 100vh;
   }
 
   ::selection {
-    background: hsl(var(--primary) / 0.3);
+    background: hsl(var(--primary) / 0.35);
     color: hsl(var(--foreground));
   }
 }
@@ -93,16 +93,16 @@
   }
 
   .comic-dot {
-    background-image: radial-gradient(circle, hsl(var(--glow) / 0.1) 1px, transparent 1.5px);
-    background-size: 20px 20px;
+    background-image: radial-gradient(circle, hsl(var(--glow) / 0.06) 1px, transparent 1.5px);
+    background-size: 22px 22px;
   }
 
   .web-grid {
     background-image: var(--pattern-web);
-    background-size: 28px 28px, 200px 200px, 200px 200px;
+    background-size: 30px 30px, 220px 220px, 220px 220px;
   }
 
-  /* Infinity Void ring — Gojo's signature move */
+  /* Sharingan ring */
   .omnitrix-ring {
     @apply relative overflow-hidden rounded-full border border-primary/50 bg-panel/80 shadow-glow;
   }
@@ -118,12 +118,12 @@
   }
 
   .alien-blob {
-    @apply animate-morph rounded-[28%_72%_57%_43%/41%_40%_60%_59%] border border-primary/30 bg-primary/10 blur-3xl;
+    @apply animate-morph rounded-[28%_72%_57%_43%/41%_40%_60%_59%] border border-primary/20 bg-primary/8 blur-3xl;
   }
 
   .headline-display {
-    @apply font-display uppercase tracking-[0.08em] text-foreground;
-    text-shadow: 0 0 32px hsl(var(--glow) / 0.22), 0 0 10px hsl(var(--accent) / 0.18);
+    @apply font-display uppercase tracking-[0.06em] text-foreground;
+    text-shadow: 0 0 28px hsl(var(--glow) / 0.18), 0 0 8px hsl(var(--accent) / 0.12);
   }
 
   .eyebrow-label {
@@ -164,7 +164,7 @@
 
   .hero-orb {
     @apply absolute rounded-full blur-3xl;
-    background: radial-gradient(circle, hsl(var(--glow) / 0.2), transparent 68%);
+    background: radial-gradient(circle, hsl(var(--glow) / 0.14), transparent 68%);
   }
 
   .cursor-ring,
@@ -174,12 +174,12 @@
 
   .cursor-ring {
     @apply h-10 w-10 border border-primary/80 bg-primary/10;
-    box-shadow: 0 0 22px hsl(var(--glow) / 0.38);
+    box-shadow: 0 0 22px hsl(var(--glow) / 0.3);
   }
 
   .cursor-core {
     @apply h-2.5 w-2.5 bg-primary;
-    box-shadow: 0 0 16px hsl(var(--glow) / 0.92);
+    box-shadow: 0 0 16px hsl(var(--glow) / 0.8);
   }
 
   .loader-screen {
@@ -189,7 +189,7 @@
   .loader-web {
     @apply relative flex h-56 w-56 items-center justify-center overflow-hidden rounded-full border border-border/70 bg-panel/80 shadow-hero;
     background-image: var(--gradient-panel);
-    box-shadow: 0 0 0 1px hsl(var(--accent) / 0.16), 0 0 40px hsl(var(--glow) / 0.3), 0 18px 50px hsl(var(--hero) / 0.44);
+    box-shadow: 0 0 0 1px hsl(var(--accent) / 0.12), 0 0 36px hsl(var(--glow) / 0.2), 0 18px 50px hsl(var(--hero) / 0.4);
   }
 
   .loader-web::before,
@@ -224,15 +224,6 @@
   .loader-thread {
     @apply absolute left-1/2 top-0 h-20 w-px -translate-x-1/2 bg-border/80;
     background-image: linear-gradient(180deg, hsl(var(--accent)), hsl(var(--primary)) 55%, hsl(var(--secondary)));
-    box-shadow: 0 0 14px hsl(var(--glow) / 0.4);
-  }
-
-  /* Gojo Infinity particle effect */
-  .infinity-particles {
-    background-image:
-      radial-gradient(circle at 20% 30%, hsl(var(--primary) / 0.15) 0px, transparent 2px),
-      radial-gradient(circle at 80% 70%, hsl(var(--accent) / 0.12) 0px, transparent 2px),
-      radial-gradient(circle at 50% 50%, hsl(var(--secondary) / 0.1) 0px, transparent 2px);
-    background-size: 60px 60px, 80px 80px, 100px 100px;
+    box-shadow: 0 0 14px hsl(var(--glow) / 0.3);
   }
 }
